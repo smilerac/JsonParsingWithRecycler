@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="100dp"
+            android:scaleType="centerCrop"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Item Name "
+                />
+
+            <TextView
+                android:textSize="12sp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desc"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Item Description "
+                />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/price"
+                android:text="Item price "
+                />
+        </LinearLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.CardView>
